@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Manage Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <!-- Nav -->
+      <nav class="relative container mx-auto p-6">
+        <!-- Flex Container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2">
+            <img src="img/logo.svg" alt="" />
+          </div>
+          <!-- Menu Items -->
+          <div class="hidden space-x-6 md:flex" id="menuItems">
+            <a href="#">가격</a>
+            <a href="#">제품</a>
+            <a href="#">소개</a>
+            <a href="#">경력</a>
+            <a href="#">커뮤니티</a>
+          </div>
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+            >시작하기</a
+          >
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="#">가격</a>
+            <a href="#">제품</a>
+            <a href="#">소개</a>
+            <a href="#">경력</a>
+            <a href="#">커뮤니티</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row"
+      >
+        <!-- Left item -->
+        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+          <h1
+            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+          >
+            모두가 함께 더 나은 제품을 만들 수 있도록 하세요.
+          </h1>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Manage는 소프트웨어 팀이 일상 업무를 계획하면서 전체 팀 목표를
+            고려할 수 있도록 간단하게 만들어 줍니다.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href="#"
+              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              >시작하기</a
+            >
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img src="img/illustration-intro.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <!-- Flex container -->
+      <div
+        class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+      >
+        <!-- What's Different -->
+        <div class="flex flex-col space-y-12 md:w-1/2">
+          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+            Manage의 차이점은 무엇인가요?
+          </h2>
+          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+            Manage는 복잡성 없이 팀이 필요로 하는 모든 기능을 제공합니다. 저희
+            소프트웨어는 현대적인 디지털 제품 팀을 위해 맞춤 제작되었습니다.
+          </p>
+        </div>
+
+        <!-- Numbered List -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- List Item 1 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  01
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  진행 상황 추적으로 원활한 업무 가능
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                진행 상황 추적으로 원활한 업무 가능
+              </h3>
+              <p class="text-darkGrayishBlue">
+                일상적인 업무가 보다 큰 비전에 어떻게 맞춰지는지 파악하고,
+                이정표 수준에서부터 가장 작은 세부 사항까지 진행 상황을 추적할
+                수 있습니다. 더 이상 큰 그림을 잊지 않도록 합니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 2 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  02
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                  내장된 고급 보고서 기능
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                내장된 고급 보고서 기능
+              </h3>
+              <p class="text-darkGrayishBlue">
+                내부 배송 예상 일정을 설정하고 회사 목표 달성을 위한 진행 상황을 추적하세요. 사용자 정의 가능한 대시보드를 활용하여 핵심 이해 관계자들에게 필요한 보고서를 제공할 수 있습니다.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 3 -->
+          <div
+            class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row"
+          >
+            <!-- Heading -->
+            <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div
+                  class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed"
+                >
+                  03
+                </div>
+                <h3 class="text-base font-bold md:mb-4 md:hidden">
+                    하나의 장소에서 필요한 모든 것을 제공
+                </h3>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="hidden mb-4 text-lg font-bold md:block">
+                하나의 장소에서 필요한 모든 것을 제공
+              </h3>
+              <p class="text-darkGrayishBlue">
+                의사소통, 파일 저장, 업무 추적 및 문서 공유를 위해 여러 서비스 사이를 오가지 마세요. Manage는 올인원 팀 생산성 솔루션을 제공합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <!-- Container to heading and testm blocks -->
+      <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+        <!-- Heading -->
+        <h2 class="text-4xl font-bold text-center">
+            Manage가 다른 점은 무엇인가요?
+        </h2>
+        <!-- Testimonials Container -->
+        <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+          <!-- Testimonial 1 -->
+          <div
+            class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3"
+          >
+            <img src="img/avatar-anisha.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Anisha Li</h5>
+            <p class="text-sm text-darkGrayishBlue">
+                "Manage는 우리 팀의 워크플로우를 놀라게 했습니다. 언제든지 큰 이정표에 대한 가시성을 유지할 수 있어 모두가 동기부여를 유지할 수 있습니다."
+            </p>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+          >
+            <img src="img/avatar-ali.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Ali Bravo</h5>
+            <p class="text-sm text-darkGrayishBlue">
+                "Manage를 사용하면서 다른 구독 서비스를 취소할 수 있었습니다. 이제 교차 채널 혼란은 없고 모두가 훨씬 집중력을 높일 수 있습니다."
+            </p>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="hidden flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3"
+          >
+            <img src="img/avatar-richard.png" class="w-16 -mt-14" alt="" />
+            <h5 class="text-lg font-bold">Richard Watts</h5>
+            <p class="text-sm text-darkGrayishBlue">
+                "Manage는 우리 팀의 워크플로우를 놀라게 했습니다. 언제든지 큰 이정표에 대한 가시성을 유지할 수 있어 모두가 동기부여를 유지할 수 있습니다."
+            </p>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="my-16">
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+            >시작하기</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-brightRed">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+      >
+        <!-- Heading -->
+        <h2
+          class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left"
+        >
+        지금 당신의 팀이 일하는 방식을 간소화하세요.
+        </h2>
+        <!-- Button -->
+        <div>
+          <a
+            href="#"
+            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            >시작하기</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue">
+      <!-- Flex Container -->
+      <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0"
+      >
+        <!-- Logo and social links container -->
+        <div
+          class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start"
+        >
+          <div class="mx-auto my-6 text-center text-white md:hidden">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+          <!-- Logo -->
+          <div>
+            <img src="img/logo-white.svg" class="h-8" alt="" />
+          </div>
+          <!-- Social Links Container -->
+          <div class="flex justify-center space-x-4">
+            <!-- Link 1 -->
+            <a href="#">
+              <img src="img/icon-facebook.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 2 -->
+            <a href="#">
+              <img src="img/icon-youtube.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 3 -->
+            <a href="#">
+              <img src="img/icon-twitter.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 4 -->
+            <a href="#">
+              <img src="img/icon-pinterest.svg" alt="" class="h-8" />
+            </a>
+            <!-- Link 5 -->
+            <a href="#">
+              <img src="img/icon-instagram.svg" alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        <!-- List Container -->
+        <div class="flex justify-around space-x-32" id="listContainer">
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#">홈</a>
+            <a href="#">가격</a>
+            <a href="#">제품</a>
+            <a href="#">소개</a>
+          </div>
+          <div class="flex flex-col space-y-3 text-white">
+            <a href="#">경력</a>
+            <a href="#">커뮤니티</a>
+            <a href="#">개인정보 처리방침</a>
+          </div>
+        </div>
+
+        <!-- Input Container -->
+        <div class="flex flex-col justify-between">
+          <form>
+            <div class="flex space-x-3">
+              <input
+                type="text"
+                class="flex-1 px-4 rounded-full focus:outline-none"
+                placeholder="이메일을 입력하세요!"
+              />
+              <button
+                class="px-6 py-2 text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none"
+              >
+                바로가기
+              </button>
+            </div>
+          </form>
+          <div class="hidden text-white md:block">
+            Copyright &copy; 2022, All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const nav = document.getElementById("menu");
+
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("open");
+        nav.classList.toggle("flex");
+        nav.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
